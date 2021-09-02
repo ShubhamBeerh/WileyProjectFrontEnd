@@ -1,4 +1,5 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+/* .App {
   text-align: center;
 }
 
@@ -34,5 +35,169 @@
   }
   to {
     transform: rotate(360deg);
+  }
+} */
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+
+/* ---------- Login Page ---------- */
+.main-header{
+  /* border: 2px solid black; */
+  text-align: center;
+  padding-top:10%;
+  padding-bottom:5%;
+  font-family: 'Nunito', sans-serif;
+}
+
+.main-header h1{
+  font-size: 70px;
+  color: #2e3b9e;
+}
+
+.main-content{
+  text-align: center;
+}
+
+.main-container{
+  height: 50rem;
+  background:url("https://c1.wallpaperflare.com/preview/521/169/267/black-blue-green-night.jpg");
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+
+.main{
+  width:700px;
+  height:450px;
+  position: relative;
+  background:#d2bade;
+  border-radius: 50% 50% 50% 50% / 3% 3% 5% 5% ;
+  box-shadow: 20px 20px rgba(0,0,0,.5);
+  transition: all .4s ease;
+}
+
+.main:hover{
+  border-radius: 0% 0% 0% 0% / 0% 0% 0% 0% ;
+  box-shadow: 10px 10px rgba(0,0,0,.5);
+}
+
+.user-login{
+  padding-top: 5%;
+}
+
+.user{
+  font-family: 'Nunito', sans-serif;
+}
+
+/*--------- Registration Page -----------*/
+.first{
+  /* border: 2px solid red; */
+  margin: 15px;
+
+}
+
+label{
+  font-weight: 900;
+  color:black;
+  text-transform: uppercase;
+}
+.col1{
+  /* border:2px solid purple; */
+}
+.col2{
+  /* border: 2px solid purple; */
+}
+input{
+  width:100%;
+  background-color: #cac5ec;
+  border-radius: 5%;
+}
+textarea{
+  width: 100%;
+  background-color: #cac5ec;
+  border-radius: 5%;
+}
+
+.form-content{
+  width: 100%;
+  /* border:10px solid green; */
+  margin: 0% 0%;
+  position: relative;
+	background-color:#cac5ec;
+	box-sizing: border-box;
+	padding: 30px;
+	text-align: center;
+	font-family: 'Nunito', sans-serif;
+	z-index: 10;
+}
+
+.form-body{
+  border: 2px solid gray;
+	box-sizing: border-box;
+	padding: 15px;
+	position: relative;
+	overflow: hidden;
+  margin:2% 25% 0% 25%;
+}
+
+.form-body::before{
+  content: '';
+	position: absolute;
+	width: 250%;
+	height: 250%;
+	background: repeating-linear-gradient(
+			white 0%,
+			white 7.5px,
+			hotpink 7.5px,
+			hotpink 15px,
+			white 15px,
+			white 22.5px,
+			hotpink 22.5px,
+			hotpink 30px);
+	transform: translateX(-21%) translateY(-20%) rotate(-45deg);
+	animation: animate 20s linear infinite;
+}
+
+.form-body,.form-content{
+  box-shadow: 0 0 5px deeppink,
+  0 0 5px rgba(0, 0, 0, 1),
+  inset 0 0 5px rgba(0, 0, 0, 1);
+  border-radius: 10px;
+}
+
+.registration{
+  background-color: black;
+}
+.registration h1{
+  text-align: center;
+  border: 2px solid black;
+  padding: 4%;
+  font-size: 80px;
+  font-family: 'Nunito', sans-serif;
+  border-radius: 25%;
+  border-style: groove;
+  color:snow;
+}
+
+@keyframes animate {
+	from {
+		background-position: 0;
+	}
+
+	to {
+		background-position: 0 450px;
+	}
+}
+
+@media (max-width: 800px) {
+  .form-body{
+      margin: 0% 0%;
+      padding:3%;
+      width:100%;
+      text-align: center;
+  }
+
+  .form-body::before{
+    width: 300%;
+	  height: 350%;
+    transform: translateX(-20%) translateY(-20%) rotate(-45deg);
   }
 }
